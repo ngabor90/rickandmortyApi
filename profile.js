@@ -5,7 +5,7 @@ var back = usp.get("back");
 console.log(id);
 
 var xhr = new XMLHttpRequest();
-xhr.open("get", "https://rickandmortyapi.com/api/index/" + id);
+xhr.open("get", "https://rickandmortyapi.com/api/character/" + id);
 xhr.onreadystatechange = function(){
     if(xhr.readyState == 4 && xhr.status == 200){
         var json = JSON.parse(xhr.responseText);
